@@ -8,27 +8,50 @@ function cargaDePalabras(x) {
     return x;
 }
 
-function remplazar(){
-    
+
+
+function textoConvertir() {
     String.prototype.guion=function(index, character) {
         return this.substr(0, index) + character +
         this.substr(index+character.length); }
-    let palabraConGuiones = palabra_Buscar.replace(/./g, "_ ");
+}
+
+function evaluacion() {
+    textoConvertir();
+    let oculto = palabra_Buscar.replace(/./g, "_ ");
+    let contadorErrores = 0;
     document.querySelector('#evaluar').addEventListener('click', () =>
         {
+            
             const evaluar = document.querySelector('#caracter').value;
+            let aprobado = true;
+            
             for(const i in palabra_Buscar){
                 if (evaluar == palabra_Buscar[i]){
-                    palabraConGuiones = palabraConGuiones.guion(i*2, evaluar);
+                    oculto = oculto.guion(i*2, evaluar);
+                    aprobado = false;
                 }
+                document.querySelector('#salidaLetra').innerHTML = oculto;
             }
-            document.querySelector('#output').innerHTML = palabraConGuiones;
+                if(aprobado){
+                        
+                        contadorErrores++;
+                        document.querySelector('#imagenAhorcado').style.backgroundPosition = -(300*contadorErrores) + 'px 0';
+                        console.log(contadorErrores);
+                    }
+
         });
-}
+    
+    }
+
+
+
+
 
 function mostrar() {
     cargaDePalabras();
-    remplazar();
+    evaluacion();
+    
 }
 
 window.onload = mostrar;

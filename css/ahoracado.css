@@ -1,0 +1,30 @@
+
+body {
+    background-color: #000046;
+}
+
+#imagenAhorcado{
+    position:absolute;
+    top: 4%;
+    left: 9%;
+    height: 500px;
+    width: 300px;
+    background-image: url(../img/Original_2.png);
+
+}
+
+#titulo{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#salidaLetra{
+    position: absolute;
+    top: 90%;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
