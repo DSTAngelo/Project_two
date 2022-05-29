@@ -13,19 +13,25 @@
       <script type="text/javascript" src="js/prototipo.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="http://code.jquery.com/jquery-latest.js"></script>
-
       <title>Juego Ahorcado </title>
-      
-  </head>
-  <body>
-      <label class = "titulo">Ahorcado Paranormal</label>
-      <div id = "imagenAhorcado"> </div>
-      <div class = "lineaDos"><label class = "tituloDos">Introduce una letra</label></div>
-      <div class = "lineaTres"><input class = "caracterA" type="text" maxlength="1" id ="caracter" pattern="[a-z]+"
-           onblur= "minuscula()" onkeypress= "return letrasValido(event)" required></div>
-      <div class = "lineaCuatro"><button class = "btnEvaluar" id = "evaluar">JUGAR</button></div>
-      <div class = "lineaCinco" id="SalidaLetraMovimiento"><label id = "salidaLetra"></label></div>
 
-      
-  </body>
+  </head>
+    <body>
+        <div class = "container">
+            <label class = "titulo">Ahorcado</label>
+            <div id = "imagenAhorcado"> </div>
+            <div class = "lineaDos"><label class = "tituloDos">Introduce una letra</label></div>
+            <div class = "lineaTres"><input class = "caracterA" type="text" maxlength="1" id ="caracter" pattern="[a-z]+"
+                onblur= "minuscula()" onkeypress= "return letrasValido(event)" required></div>
+            <div class = "lineaCuatro"><button class = "btnEvaluar" id = "evaluar">JUGAR</button></div>
+            <div class = "lineaCinco" id="SalidaLetraMovimiento"><label id = "salidaLetra"></label></div>
+            <div class="lineaSeis" id = "seis">
+                <button class="btnReiniciar" id="reiniciar" onclick="encender()">Nuevo Juego</button>
+            </div>
+            <div id = "lineaGanador"></div>
+            <div id = "lineaPerdedor"></div>
+        </div>
+
+
+   </body>
 </html>
