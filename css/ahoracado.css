@@ -52,9 +52,9 @@ header{
     width:96%;
     align-items: center;
     margin-left: 5.5%;
-    height: 500px;
+    height: 300px;
     width: 300px;
-    background-image: url(../img/Original_2.png);
+    background-image: url(../img/Original03.png);
     transition-timing-function: linear;
     transition-delay: 0.1s; 
     border-radius: 5px;
@@ -65,7 +65,7 @@ header{
 
 .lineaCinco{                        /*Contenedor de letra*/
     position: absolute;
-    top: 12%;
+    top: 10%;
     width:94%;
     text-align: center;
 }
