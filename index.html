@@ -17,20 +17,31 @@
 
   </head>
     <body>
-        <div class = "container">
-            <label class = "titulo">Ahorcado</label>
-            <div id = "imagenAhorcado"> </div>
-            <div class = "lineaDos"><label class = "tituloDos">Introduce una letra</label></div>
-            <div class = "lineaTres"><input class = "caracterA" type="text" maxlength="1" id ="caracter" pattern="[a-z]+"
-                onblur= "minuscula()" onkeypress= "return letrasValido(event)" required></div>
-            <div class = "lineaCuatro"><button class = "btnEvaluar" id = "evaluar">JUGAR</button></div>
-            <div class = "lineaCinco" id="SalidaLetraMovimiento"><label id = "salidaLetra"></label></div>
-            <div class="lineaSeis" id = "seis">
-                <button class="btnReiniciar" id="reiniciar" onclick="encender()">Nuevo Juego</button>
+        <header>
+            <label class="titulo">Ahorcado</label>
+        </header>
+
+        <main>
+            <div class = "container">
+                
+                <div><label>A</label></div>
+
+                <div class="lineaCinco" id="SalidaLetraMovimiento">
+                    <label id="salidaLetra"></label>
+                </div>
+                <div id = "imagenAhorcado"> </div>
+                <div class = "lineaDos"><label class = "tituloDos">Introduce una letra</label></div>
+                <div class = "lineaTres"><input class = "caracterA" type="text" maxlength="1" id ="caracter" pattern="[a-z]+"
+                    onblur= "minuscula()" onkeypress= "return letrasValido(event)" required></div>
+                <div class = "lineaCuatro"><button class = "btnEvaluar" id = "evaluar">JUGAR</button></div>
+                <div class = "lineaCinco" id="SalidaLetraMovimiento"><label id = "salidaLetra"></label></div>
+                <div class="lineaSeis" id = "seis">
+                    <button class="btnReiniciar" id="reiniciar" onclick="encender()">Nuevo Juego</button>
+                </div>
+                <div id = "lineaGanador"></div>
+                <div id = "lineaPerdedor"></div>
             </div>
-            <div id = "lineaGanador"></div>
-            <div id = "lineaPerdedor"></div>
-        </div>
+        </main>
 
 
    </body>
