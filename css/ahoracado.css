@@ -51,6 +51,7 @@ header{
 #imagenAhorcado{
     width:96%;
     align-items: center;
+    margin-top: 3%;
     margin-left: 5.5%;
     height: 300px;
     width: 300px;
@@ -65,7 +66,7 @@ header{
 
 .lineaCinco{                        /*Contenedor de letra*/
     position: absolute;
-    top: 10%;
+    top: 8%;
     width:94%;
     text-align: center;
 }
@@ -80,8 +81,7 @@ header{
 .lineaTres{                        /*contenedor input*/
     position: absolute;
     display: inline-block;
-    
-    top: 70%;
+    top: 42%;
     left: 78%;
     padding: 0 0 0 0;
 }
@@ -186,4 +186,24 @@ header{
     border-style: solid;
     border-color: aliceblue;
 
+}
+
+/* TECLADO */
+#teclado {
+    margin-top: 5%;
+    margin-left: 2%;
+    align-items: center;
+}
+
+#teclado button.key {
+    border: 3px outset #96734a;
+    color: #FFF;
+    font-size: 12px;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 2px;
+    text-align: center;
+    text-indent: -1px;
+    border-radius: 8px;
 }

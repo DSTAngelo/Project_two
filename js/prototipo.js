@@ -160,7 +160,7 @@ function evaluacion() {
       document.querySelector("#imagenAhorcado").style.backgroundPosition =
         -(300 * contadorErrores) + "px 0";
       console.log(contadorErrores);
-      if (contadorErrores == 4) {
+      if (contadorErrores == 5) {
         console.log(contadorErrores);
         alert("perdiste");
         desabilitar("#caracter");
